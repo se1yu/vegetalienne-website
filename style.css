@@ -1,0 +1,42 @@
+body{
+    background-image: url(photos/vegetalienne.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.homepage{
+}
+
+#logo{
+    font-size: 100px;
+    margin-top: 400px;
+    color: pink;
+    font-family: 'Mr Dafoe';
+} 
+
+
+ul{
+    list-style-type:none;
+    background-color:#95aed5;
+    overflow:hidden;
+    padding:1em;
+    width:100%;
+  }
+  
+  li{
+    display:inline;
+  }
+  
+  /* anchor in list elemetnt*/
+  li a{
+    text-decoration:none;
+    color:#e4ecec;
+    font-size:1.3em;
+    padding:1em;
+  }
+  
+  /* when hover anchor in li, itll change color */
+  li a:hover{
+    background-color:#7c80b1;
+  }
