@@ -1,3 +1,11 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  text-align: center;
+  width:100%;
+}
 .homePage{
   background-image: url(photos/vegetalienne.svg);
   background-size: cover;
@@ -5,11 +13,20 @@
   text-align: center;
 }
 
-.approachPage{
-  background-color: white;
-  text-align: left;
-  margin-inline-start: 100px;
-  margin-inline-end: 100px;
+.approachPage {
+  background: 
+    linear-gradient(white 65%, transparent 35%), /* Top half white, img bottom*/
+    url(photos/approachImage.svg) no-repeat bottom; 
+    margin: 0;
+  background-size: cover; /* Img fits width; height adjusts */
+  height: 100vh; /* Full height */
+  
+  overflow: hidden;
+}
+
+.approachText{
+  margin-left: 80px; 
+  margin-right: 150px;
 }
 
 #logo{
@@ -30,7 +47,8 @@ ul{
   background-color:#95aed5;
   overflow:hidden;
   padding:1em;
-  width:100%;  
+  margin: 0;
+  width: 100%;  
 }
   
 li{
