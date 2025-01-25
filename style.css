@@ -1,6 +1,7 @@
 html, body{
   margin: 0;
   padding: 0;
+  
 }
 nav{
   text-align: center;
@@ -13,15 +14,31 @@ nav{
   text-align: center;
 }
 
-.approachPage {
-  background: 
-    linear-gradient(white 65%, transparent 35%), /* Top half white, img bottom*/
-    url(photos/approachImage.svg) no-repeat bottom; 
-    margin: 0;
-  background-size: cover; /* Img fits width; height adjusts */
-  height: 100vh; /* Full height */
+.reservationPage{
+  text-align: center;
   
+}
+
+div.referencePage{ /* Need to check why outline border won't work */
+  border: 1.5px solid black; 
+
+  padding: 10px;
+}
+.approachPage {
+ /* background: 
+    linear-gradient(white 65%, transparent 35%), Top half white, img bottom
+    url(photos/approachImage.svg) no-repeat bottom; 
+    margin: 0; */
+  background-color: white;  
+  height: 100vh; /* Full height */
+
+}
+
+#approachImage{
+  max-width: 100%; 
+  max-height: 100%;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .approachText{
@@ -30,25 +47,25 @@ nav{
 }
 
 #logo{
-  font-size: 100px;
-  margin-top: 400px;
-  color: pink;
-  font-family: 'Mr Dafoe';
+  font-size: 80px;
+  margin-top: 200px;
+  color: rgba(218, 218, 218, 0.7);
+  font-family:'Times New Roman', Times, serif;
 } 
 
 #approachHeading{
-  font-size: 100px;
+  font-size: 50px;
   color:rgb(3, 31, 31);
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 ul{
   list-style-type:none;
-  background-color:#95aed5;
+  background-color: rgba(218, 218, 218, 0.2); /* 95aed5 */
   overflow:hidden;
   padding:1em;
   margin: 0;
-  width: 100%;  
+  
 }
   
 li{
@@ -58,12 +75,12 @@ li{
   /* anchor in list elemetnt*/
 li a{
   text-decoration:none;
-  color:#e4ecec;
+  color:#023320;
   font-size:1.3em;
   padding:1em;
 }
   
   /* when hover anchor in li, itll change color */
 li a:hover{
-  background-color:#7c80b1;
+  background-color:#2f6cb7a4;
 }
