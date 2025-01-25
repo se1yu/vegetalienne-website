@@ -31,6 +31,7 @@ div.referencePage{ /* Need to check why outline border won't work */
     margin: 0; */
   background-color: white;  
   height: 100vh; /* Full height */
+  
 
 }
 
@@ -118,6 +119,36 @@ body, .approachPage{
  }
 }
 
+/*sustainability page (still on approachPage */
+.sustainabilityPage{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+.textLeft, .textRight{
+  flex: 1;
+}
+.textLeft p, .textRight p{
+  margin-bottom: 6rem; /* vertical space between each p element */
+}
+.textLeft{
+  text-align: right;
+
+}
+.centerImage{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.sustainabilityHeading{
+  font-size: 36px;
+  font-style: italic;
+  margin-top: 20px;
+  
+}
+
+
+/* Nav bar stuff*/
 ul{
   list-style-type:none;
   background-color: rgba(218, 218, 218, 0.2); /* 95aed5 */
