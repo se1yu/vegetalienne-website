@@ -13,12 +13,20 @@
         <li>
             <a href="reservations.html"> Reservations </a>
         </li>
-        <li>
-            <a href="story.html"> Our Story </a>
+
+        <li class="dropdown">
+            <a href="#" class="dropdownToggle"> About ▼</a>
+            <ul class="dropdownMenu"> 
+                <li> 
+                    <a href="story.html"> Our Story </a>
+                </li>
+                <li>
+                    <a href="approach.html"> Our Approach </a>
+                </li>
+            </ul>
         </li>
-        <li>
-            <a href="approach.html"> Our Approach </a>
-        </li>
+
+        
         <li>
             <a href="contact.html"> Contact </a>
         </li>
@@ -31,13 +39,12 @@
         </ul>
     </nav>
    
-    
-
-    <div class = "reservationPage" style="margin-top: 50px; "> 
+    <h1 style="margin-bottom: 10px;  font-size: 50px; color:rgb(3, 31, 31); text-align: center;"> Make a reservation. </h1>
+    <div class = "reservationPage" style="margin-top: 50px; margin-bottom: 50px;"> 
         <div class="reservationForm"> 
             <img src="../photos/reservationImage.png" id="reservationImage">
             <form action="https://formspree.io/f/xanqqypw" method="post" class="form">
-                <h1 style="margin-bottom: 0;"> Make a reservation. </h1>
+                <h1 style="margin-bottom: 0; font-style: italic;"> végétalienne </h1>
                                    
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="number" name="number" placeholder="Phone Number" required>
