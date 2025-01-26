@@ -16,7 +16,75 @@ nav{
 
 .reservationPage{
   text-align: center;
-  
+  align-items: center;
+}
+
+input{
+  flex: auto;
+ 
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  width:50%;
+  height:30px;
+}
+textarea{
+  width:47.3%;
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+input:focus-within{
+  outline:none;
+  border-color: rgba(64, 158, 64);
+  border-width: 1px;
+}
+
+textarea:focus-within{
+  outline:none;
+  border-color: rgba(64, 158, 64);
+  border-width: 1px;
+}
+
+button{
+  padding: 0.5rem 1rem;
+  width: 53%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(46, 196, 46);
+  color: white;
+  font-size: 20px;
+}
+
+button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.reservationForm{
+  position:relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  align-items: center;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  border-radius: 10px; 
+}
+
+#reservationImage{
+  opacity:.40; 
+  width: 100%;
+  height: 100%;
 }
 
 div.referencePage{ /* Need to check why outline border won't work */
@@ -147,6 +215,90 @@ body, .approachPage{
   
 }
 
+/* Menu Page */
+#menuImage{
+  width: 100%;
+}
+
+.menuPage{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+.menuPage h1{
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  font-style: italic;
+  
+}
+
+.menuPage p{
+  font-size: 18px;
+  width: 60%;
+}
+
+
+/* Restaurant Page */
+#restaurantImage{
+  width: 40%;
+  display: inline;
+  float: left;
+  margin-left: 70px;
+  border-radius: 32px;
+  margin-top: 50px;
+}
+
+#womanImage{
+  width: 30%;
+  display: inline;
+  float: right;
+  margin-right: 50px;
+  border-radius: 32px;
+}
+/* Contact Page */
+#contactImage{
+  width: 100%;
+}
+.contactPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* The differnce between align-items and align-content is crazy!! */
+  text-align: center;
+  padding: 20px;
+
+}
+
+.topRow{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+}
+.bottomRow{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+}
+.topRow div, .bottomRow div{
+  text-align: center;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.contactPage h2{
+  margin: 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.contactPage p{
+  margin: 5px 0 0;
+  font-size: 1em;
+}
 
 /* Nav bar stuff*/
 ul{

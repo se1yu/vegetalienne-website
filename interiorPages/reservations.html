@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../style.css" /> 
 </head>
 
-<body class="reservationPage"> 
+<body> 
     <nav> 
         <ul> 
         <li>
@@ -30,6 +30,28 @@
         </li>
         </ul>
     </nav>
-    <h1> Make a reservation. </h1>
+   
+    
+
+    <div class = "reservationPage" style="margin-top: 50px; "> 
+        <div class="reservationForm"> 
+            <img src="../photos/reservationImage.png" id="reservationImage">
+            <form action="https://formspree.io/f/xanqqypw" method="post" class="form">
+                <h1 style="margin-bottom: 0;"> Make a reservation. </h1>
+                                   
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="number" name="number" placeholder="Phone Number" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="number" name="people" placeholder="Number of Seats" required>
+                    <input type="date" name="date" required>
+                    <input type="time" name="time" required>
+                    <textarea rows="4"  name="message" placeholder="Enter text"></textarea>
+                    <button type="submit"> Send a Message </button>
+    
+            </form>
+        </div>
+    </div>
+
+    
 </body>
 </html>
