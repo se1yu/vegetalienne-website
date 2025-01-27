@@ -101,11 +101,51 @@ button:hover{
   height: 100%;
 }
 
-div.referencePage{ /* Need to check why outline border won't work */
+div.referencePage{ 
   border: 1.5px solid black; 
-
   padding: 10px;
+  margin-bottom: 3rem;
 }
+
+.citations {
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+  gap: 1rem; 
+  align-items: start; 
+}
+
+.description {
+  font-weight: bold; 
+  margin-top: 3rem;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(61, 61, 5);
+}
+
+.citation {
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+}
+
+a {
+  color: blue; 
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .citations {
+    grid-template-columns: 1fr; 
+    gap: 0.5rem; 
+  }
+
+  .description {
+    margin-bottom: 0.5rem; 
+  }
+}
+
+
+
+
 .approachPage {
  /* background: 
     linear-gradient(white 65%, transparent 35%), Top half white, img bottom
@@ -246,12 +286,14 @@ body, .approachPage{
   color: rgb(10, 61, 36);
   margin-bottom: 2rem;
 }
+
 .menuHeading{
   font-size: 24px;
   font-style: italic;
   display:flex;
   margin:3rem;
-  justify-content:space-evenly ;
+  justify-content: space-between;
+  align-items: left;
 }
 .menuPage h3{
   text-transform: uppercase;
@@ -267,7 +309,7 @@ body, .approachPage{
 /* Restaurant Page */
 #restaurantImage{
   width: 40%;
-  display: inline;
+  display: flex;
   float: left;
   margin-left: 70px;
   border-radius: 32px;
@@ -276,9 +318,9 @@ body, .approachPage{
 
 #womanImage{
   width: 30%;
-  display: inline;
-  float: right;
-  margin-right: 50px;
+  display: flex;
+  margin-bottom: 3rem;
+  margin-right: 10rem;
   border-radius: 32px;
 }
 /* Contact Page */
@@ -290,8 +332,8 @@ body, .approachPage{
   flex-direction: column;
   align-items: center; /* The differnce between align-items and align-content is crazy!! */
   text-align: center;
-  padding: 20px;
-
+  
+  background-color: rgba(218, 218, 218, 0.2); /* 95aed5 */
 }
 
 .topRow{
@@ -299,8 +341,8 @@ body, .approachPage{
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin-bottom: 4rem;
-  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 .bottomRow{
   display: flex;
