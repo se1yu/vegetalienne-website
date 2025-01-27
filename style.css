@@ -161,6 +161,8 @@ body, .approachPage{
   display: flex;
   flex-direction: column;
   gap:2rem;
+  margin-right: 1.5rem;
+ 
 }
 .step{
   display:flex;
@@ -176,13 +178,19 @@ body, .approachPage{
   line-height: 1;
 }
 
-.text{
-  max-width: 800px;
-}
+
 .text strong{
   font-size: 24px;
   font-style: italic;
   color: olive;
+}
+
+#approachMessage{
+  font-size: 24px;
+  font-style: italic;
+  color: olive;
+  text-align: right;
+ 
 }
 .text p{
   font-size: 16px;
@@ -190,16 +198,7 @@ body, .approachPage{
   line-height: 1.6;
 }
 
-/*Making somewhat responsive..*/
-@media (max-width: 768px){
- .step{
-    flex-direction: column;
-    gap: 1rem;
- }
- .number{
-   font-size: 48px;
- }
-}
+
 
 /*sustainability page (still on approachPage */
 .sustainabilityPage{
@@ -232,6 +231,7 @@ body, .approachPage{
 /* Menu Page */
 #menuImage{
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .menuPage{
@@ -243,12 +243,24 @@ body, .approachPage{
 .menuPage h1{
   font-family: 'Georgia', 'Times New Roman', 'Times', serif;
   font-style: italic;
-  
+  color: rgb(10, 61, 36);
+  margin-bottom: 2rem;
+}
+.menuHeading{
+  font-size: 24px;
+  font-style: italic;
+  display:flex;
+  margin:3rem;
+  justify-content:space-evenly ;
+}
+.menuPage h3{
+  text-transform: uppercase;
 }
 
 .menuPage p{
-  font-size: 18px;
-  width: 60%;
+  font-size: 15px;
+  width: 90%;
+  font-style: italic;
 }
 
 
@@ -309,11 +321,39 @@ body, .approachPage{
   text-transform: uppercase;
 }
 
+
+
 .contactPage p{
   margin: 5px 0 0;
   font-size: 1em;
 }
 
+
+/* map and time section on contact page*/
+.mapPage{
+  padding:10rem;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.openingTimes{
+  display:inline;
+  float:left;
+  margin-right:10rem;
+  min-width: 40%;
+}
+
+.map{
+  margin-bottom:4rem;
+}
+
+.times{
+  padding:0;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  gap: 1rem;
+}
 /* Nav bar stuff*/
 ul{
   list-style-type:none;
@@ -343,6 +383,7 @@ li a:hover{
 }
 
 .dropdownMenu{
+  text-align: left;
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
