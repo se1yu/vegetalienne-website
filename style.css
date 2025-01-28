@@ -3,6 +3,8 @@ html, body{
   padding: 0;
   
 }
+
+
 nav{
   text-align: center;
   width:100%;
@@ -102,9 +104,9 @@ button:hover{
 }
 
 div.referencePage{ 
-  border: 1.5px solid black; 
+  border: 1.5px dashed black; 
   padding: 10px;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .citations {
@@ -128,7 +130,7 @@ div.referencePage{
 }
 
 a {
-  color: blue; 
+  color: rgb(14, 146, 47); 
   text-decoration: underline;
 }
 
@@ -169,21 +171,34 @@ a {
 }
 
 .approachText{
-  margin-left: 80px; 
-  margin-right: 150px;
+  margin-left: 5rem; 
+  margin-right: 13rem;
 }
 
 #logo{
-  font-size: 80px;
+  font-size: 130px;
   margin-top: 200px;
-  color: rgba(218, 218, 218, 0.7);
-  font-family:'Times New Roman', Times, serif;
+  color: #f7f3e0;
+  font-family:"Lovers Quarrel", Times, serif;
+  text-shadow: 3px 3px 4px #00000054;
 } 
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lovers-quarrel-regular {
+  font-family: "Lovers Quarrel", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 
 #approachHeading{
   font-size: 50px;
   color:rgb(3, 31, 31);
   margin-bottom: 10px;
+  margin-top: 3rem;
 }
 
 body, .approachPage{
@@ -201,7 +216,7 @@ body, .approachPage{
   display: flex;
   flex-direction: column;
   gap:2rem;
-  margin-right: 1.5rem;
+  margin-right: 5rem;
  
 }
 .step{
@@ -228,7 +243,7 @@ body, .approachPage{
 #approachMessage{
   font-size: 24px;
   font-style: italic;
-  color: olive;
+ 
   text-align: right;
  
 }
@@ -242,7 +257,7 @@ body, .approachPage{
 
 /*sustainability page (still on approachPage */
 .sustainabilityPage{
-  margin-top: 2rem;
+  margin-top: 0rem;
   display: flex;
   justify-content: space-between;
 
@@ -253,9 +268,16 @@ body, .approachPage{
 .textLeft p, .textRight p{
   margin-bottom: 6rem; /* vertical space between each p element */
 }
+.textLeft h3{
+  margin-bottom: 3rem;
+  font-size: 20px;
+}
 .textLeft{
   text-align: right;
-
+  margin-left: 5rem;
+}
+.textRight{
+  margin-right: 5rem;
 }
 .centerImage{
   margin-left: 4rem;
@@ -277,7 +299,8 @@ body, .approachPage{
 .menuPage{
   display: flex;
   justify-content: space-between;
-  margin: 3rem;
+  margin: 5rem;
+  margin-top: 0;
 }
 
 .menuPage h1{
@@ -288,24 +311,30 @@ body, .approachPage{
 }
 
 .menuHeading{
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
   display:flex;
-  margin:3rem;
+  margin-left:5rem;
+  margin-right: 5rem;
   justify-content: space-between;
   align-items: left;
+  
 }
+
 .menuPage h3{
   text-transform: uppercase;
+  width:90%
 }
 
 .menuPage p{
   font-size: 15px;
-  width: 90%;
+  width: 80%;
   font-style: italic;
 }
 
-
+.meals{
+  margin-right: 1rem;
+}
 /* Restaurant Page */
 #restaurantImage{
   width: 40%;
@@ -313,19 +342,23 @@ body, .approachPage{
   float: left;
   margin-left: 70px;
   border-radius: 32px;
-  margin-top: 50px;
+  margin-top: 5rem;
+}
+.restaurantPage h1{
+  font-size: 50px;
 }
 
 #womanImage{
   width: 30%;
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   margin-right: 10rem;
   border-radius: 32px;
 }
 /* Contact Page */
 #contactImage{
   width: 100%;
+  margin-bottom: 0;
 }
 .contactPage{
   display: flex;
@@ -374,6 +407,7 @@ body, .approachPage{
 /* map and time section on contact page*/
 .mapPage{
   padding:10rem;
+  padding-top: 8rem;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
@@ -419,6 +453,12 @@ li a{
   display: inline-block;
 }
   
+li a.exclude{
+  font-size: 1.3em;
+  
+  color: #131002;
+  font-family:"Lovers Quarrel", Times, serif;
+}
   /* when hover anchor in li, itll change color */
 li a:hover{
   background-color:#2f6cb7a4;
